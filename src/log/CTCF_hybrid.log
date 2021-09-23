@@ -1,0 +1,37 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/CTCF/hybrid/hybrid.pth
+INFO:root:Using CUDA: True
+DEBUG:root:Loading dataset and creating vectorizer...
+DEBUG:root:Initializing model...
+DEBUG:root:The model has 613617 parameters.
+DEBUG:root:Training 613617 parameters with 682927 instances at a rate of 1.112953 instances per parameter.
+DEBUG:root:Starting epoch: 0
+DEBUG:root:Epoch: 0, Validation Loss: 0.23139603853873594, Validation APS: 0.5232685996203802
+DEBUG:root:Starting epoch: 1
+DEBUG:root:Epoch: 1, Validation Loss: 0.06606303558954243, Validation APS: 0.5730806166482494
+DEBUG:root:Starting epoch: 2
+DEBUG:root:Epoch: 2, Validation Loss: 0.0950086116502046, Validation APS: 0.6037556840782734
+DEBUG:root:Starting epoch: 3
+DEBUG:root:Epoch: 3, Validation Loss: 0.09586034143741443, Validation APS: 0.5913606682571538
+DEBUG:root:Starting epoch: 4
+DEBUG:root:Epoch: 4, Validation Loss: 0.11302962760900469, Validation APS: 0.6207166451510486
+DEBUG:root:Starting epoch: 5
+DEBUG:root:Epoch: 5, Validation Loss: 0.09150722778784295, Validation APS: 0.6202859884932849
+DEBUG:root:Starting epoch: 6
+DEBUG:root:Epoch: 6, Validation Loss: 0.08182525777456917, Validation APS: 0.6251890653101753
+DEBUG:root:Starting epoch: 7
+DEBUG:root:Epoch: 7, Validation Loss: 0.09612056085195524, Validation APS: 0.6225079591577076
+DEBUG:root:Starting epoch: 8
+DEBUG:root:Epoch: 8, Validation Loss: 0.07768788795868922, Validation APS: 0.6249828907149162
+DEBUG:root:Starting epoch: 9
+DEBUG:root:Epoch: 9, Validation Loss: 0.07663273751499786, Validation APS: 0.6252693268164946
+DEBUG:root:Starting epoch: 10
+DEBUG:root:Epoch: 10, Validation Loss: 0.07270885087366585, Validation APS: 0.6274568129901503
+DEBUG:root:Starting epoch: 11
+DEBUG:root:Epoch: 11, Validation Loss: 0.07071396788663181, Validation APS: 0.6268428636765919
+DEBUG:root:Starting epoch: 12
+DEBUG:root:Epoch: 12, Validation Loss: 0.07739574467016835, Validation APS: 0.6260410622419555
+DEBUG:root:Starting epoch: 13
+DEBUG:root:Epoch: 13, Validation Loss: 0.07660453844840133, Validation APS: 0.6252014055733632
+DEBUG:root:Starting epoch: 14
+DEBUG:root:Epoch: 14, Validation Loss: 0.07351332759812104, Validation APS: 0.6268955887307148

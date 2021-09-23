@@ -1,0 +1,14 @@
+- Finish writing DADNN review till ADDA.
+- Review CoGAN, look at how it's implemented.
+- Validation with unweighted dataset.
+- Run 3 models on RXRA TF data.
+- Run 3 models on CEBPA TF data.
+- Run 3 models on HNF4A TF data.
+- DANN debugging to know src and tgt scores after each epoch.
+- DANN debugging change batch size.
+- Separate test and evaluation functions, samplers.
+- Adda no need for training source, use hybrid model training weights.
+Create a CLI for hybrid, dann, adda training
+Bound-Unbound sites results.
+! Implement CoGAN.
+Include FP,FN,TP,TN in your analysis. Also include how many changed from FP -> TP, FN -> TN and vice versa.

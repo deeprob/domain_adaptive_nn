@@ -1,0 +1,30 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/RXRA/hybrid/hybrid.pth
+INFO:root:Using CUDA: True
+DEBUG:root:Loading dataset and creating vectorizer...
+DEBUG:root:Initializing model...
+DEBUG:root:The model has 613617 parameters.
+DEBUG:root:Training 613617 parameters with 963157 instances at a rate of 1.569639 instances per parameter.
+DEBUG:root:Starting epoch: 0
+DEBUG:root:Epoch: 0, Validation Loss: 0.39895390435518074, Validation APS: 0.15258492433141374
+DEBUG:root:Starting epoch: 1
+DEBUG:root:Epoch: 1, Validation Loss: 0.3294796294309128, Validation APS: 0.20459831072421464
+DEBUG:root:Starting epoch: 2
+DEBUG:root:Epoch: 2, Validation Loss: 0.35668287193561105, Validation APS: 0.21075103094963538
+DEBUG:root:Starting epoch: 3
+DEBUG:root:Epoch: 3, Validation Loss: 0.3024805644903834, Validation APS: 0.2204340732306779
+DEBUG:root:Starting epoch: 4
+DEBUG:root:Epoch: 4, Validation Loss: 0.30501191737042294, Validation APS: 0.21736487356956546
+DEBUG:root:Starting epoch: 5
+DEBUG:root:Epoch: 5, Validation Loss: 0.30127568399579413, Validation APS: 0.23139036849920885
+DEBUG:root:Starting epoch: 6
+DEBUG:root:Epoch: 6, Validation Loss: 0.23910675101996204, Validation APS: 0.2267503882426844
+DEBUG:root:Starting epoch: 7
+DEBUG:root:Epoch: 7, Validation Loss: 0.18414447299699496, Validation APS: 0.2254907113398173
+DEBUG:root:Starting epoch: 8
+DEBUG:root:Epoch: 8, Validation Loss: 0.2658060455360295, Validation APS: 0.22544484958037322
+DEBUG:root:Starting epoch: 9
+DEBUG:root:Epoch: 9, Validation Loss: 0.1965092542702737, Validation APS: 0.2253111698564139
+DEBUG:root:Starting epoch: 10
+DEBUG:root:Epoch: 10, Validation Loss: 0.207310471249945, Validation APS: 0.22660797446214942
+DEBUG:root:Early stopping criterion fulfilled!

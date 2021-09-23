@@ -1,0 +1,37 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/Hnf4a/dann/dann.pth
+INFO:root:Using CUDA: True
+DEBUG:root:loading dataset...
+DEBUG:root:Initializing model...
+DEBUG:root:The model has 9250034 parameters.
+DEBUG:root:Training 9250034 parameters with 909927 instances at a rate of 0.09837 instances per parameter.
+DEBUG:root:Starting epoch: 0
+DEBUG:root:Epoch: 0, Validation Loss: 0.3337561988988309, Validation APS: 0.1293044997744577
+DEBUG:root:Starting epoch: 1
+DEBUG:root:Epoch: 1, Validation Loss: 0.30411079592707085, Validation APS: 0.17948411279462836
+DEBUG:root:Starting epoch: 2
+DEBUG:root:Epoch: 2, Validation Loss: 0.3103813787827194, Validation APS: 0.19552701084717494
+DEBUG:root:Starting epoch: 3
+DEBUG:root:Epoch: 3, Validation Loss: 0.2093834662302931, Validation APS: 0.2099853395029856
+DEBUG:root:Starting epoch: 4
+DEBUG:root:Epoch: 4, Validation Loss: 0.21576642443783325, Validation APS: 0.22006487005923758
+DEBUG:root:Starting epoch: 5
+DEBUG:root:Epoch: 5, Validation Loss: 0.18413037870797594, Validation APS: 0.23275630583538726
+DEBUG:root:Starting epoch: 6
+DEBUG:root:Epoch: 6, Validation Loss: 0.29639982306917856, Validation APS: 0.23793874446770624
+DEBUG:root:Starting epoch: 7
+DEBUG:root:Epoch: 7, Validation Loss: 0.23328322128433257, Validation APS: 0.2468307916223743
+DEBUG:root:Starting epoch: 8
+DEBUG:root:Epoch: 8, Validation Loss: 0.22295012726591087, Validation APS: 0.25190517469341095
+DEBUG:root:Starting epoch: 9
+DEBUG:root:Epoch: 9, Validation Loss: 0.21727523860118442, Validation APS: 0.24860505652598064
+DEBUG:root:Starting epoch: 10
+DEBUG:root:Epoch: 10, Validation Loss: 0.198279405922923, Validation APS: 0.25711581808065787
+DEBUG:root:Starting epoch: 11
+DEBUG:root:Epoch: 11, Validation Loss: 0.23114562915930334, Validation APS: 0.25343434722714264
+DEBUG:root:Starting epoch: 12
+DEBUG:root:Epoch: 12, Validation Loss: 0.23059629066680032, Validation APS: 0.2570883611913197
+DEBUG:root:Starting epoch: 13
+DEBUG:root:Epoch: 13, Validation Loss: 0.2330995048179738, Validation APS: 0.25750539852591126
+DEBUG:root:Starting epoch: 14
+DEBUG:root:Epoch: 14, Validation Loss: 0.21754690968908635, Validation APS: 0.2552581824426737

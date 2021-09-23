@@ -1,0 +1,6 @@
+Bi-Directional LSTM for model improvement
+Feed both forward and reverse strands as input
+Change validation dataset to be unweighted
+Attention layer after LSTM
+Transposed Convolution to get back the length of the region
+Batch Normalization in between layers. 
