@@ -2,3 +2,4 @@ simple GAN: https://towardsdatascience.com/build-a-super-simple-gan-in-pytorch-5
 DCGAN training pytorch: https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
 Saliency features: ref: https://www.nature.com/articles/s41576-019-0122-6#Sec11 paper: https://arxiv.org/pdf/1312.6034.pdf
 CoGAN repo: https://github.com/mingyuliutw/CoGAN
+gitignore doc: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
