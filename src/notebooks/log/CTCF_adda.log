@@ -48,3 +48,37 @@ DEBUG:root:Source Validation APS: 0.6200752841606803, Target Validation APS: 0.5
 DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_0.pth after 0 epochs
 DEBUG:root:Source dataset size = 3385887
 DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6152291713444055, Target Validation APS: 0.5678524566837101 after 1 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_1.pth after 1 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6144561548535742, Target Validation APS: 0.5646943157811046 after 2 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_2.pth after 2 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6154916459564082, Target Validation APS: 0.5519879277339312 after 3 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_3.pth after 3 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6124368664389493, Target Validation APS: 0.5724174238263087 after 4 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_4.pth after 4 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6173882262608077, Target Validation APS: 0.5650847922240523 after 5 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_5.pth after 5 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.6123328124944647, Target Validation APS: 0.5825002075812495 after 6 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_6.pth after 6 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.598430754212793, Target Validation APS: 0.576245156888469 after 7 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_7.pth after 7 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.605463139081446, Target Validation APS: 0.5851724508368307 after 8 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_8.pth after 8 epochs
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.5937398872777622, Target Validation APS: 0.5765765183473809 after 9 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/CTCF/adda/adda_tgt_enc_9.pth after 9 epochs

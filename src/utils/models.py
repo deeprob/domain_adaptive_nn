@@ -47,6 +47,41 @@ class TFMLP(nn.Module):
         return y_out
 
 
+class TFMLP_(nn.Module):
+    """TFMLP base class for cogan model"""
+    def __init__(self, input_features=32, fc1_nodes=1024, dropout_prob=0.5):        
+        super(TFMLP_, self).__init__()
+        self.fclayers = nn.Sequential(
+                         nn.Linear(input_features, fc1_nodes),
+                         nn.ReLU(),
+                         nn.Dropout(dropout_prob),
+                         nn.Linear(fc1_nodes, fc1_nodes//2),
+                         nn.Sigmoid(),
+                         nn.Linear(fc1_nodes//2, fc1_nodes//4)
+                    )
+        
+    def forward(self, x_in):
+        
+        y_out = self.fclayers(torch.flatten(x_in, start_dim=1)).squeeze()
+        return y_out
+
+
+class TFSLP(nn.Module):
+    """TFSLP base class for cogan model"""
+    def __init__(self, input_features=256):        
+        super(TFSLP, self).__init__()
+        self.fclayers = nn.Sequential(
+                         nn.Linear(input_features, 1)
+                    )
+        
+    def forward(self, x_in, apply_sigmoid=False):
+        
+        y_out = self.fclayers(torch.flatten(x_in, start_dim=1)).squeeze()
+        if apply_sigmoid:
+            y_out = torch.sigmoid(y_out)
+        return y_out
+
+
 class TFCNN(nn.Module):
     
     def __init__(self, channels=4, conv_filters=240, conv_kernelsize=20,
@@ -81,3 +116,17 @@ class TFLSTM(nn.Module):
         if apply_sigmoid:
             y_out = torch.sigmoid(y_out)
         return y_out
+
+
+class TFLSTM_(nn.Module):
+    """lstm basic class for cogan model"""
+    def __init__(self, input_features=240, lstm_nodes=32):        
+        super(TFLSTM_, self).__init__()
+        self.lstm = nn.LSTM(input_features, lstm_nodes, batch_first=True)
+        
+    def forward(self, x_in):
+        # transpose input: (batch_size, filters, seq) -> (batch_size, seq, filters) 
+        x_in = torch.transpose(x_in, 1, 2)
+        out, (hn,cn) = self.lstm(x_in)
+        x_in = out[:, -1, :]
+        return x_in
