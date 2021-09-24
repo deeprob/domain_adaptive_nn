@@ -1,0 +1,94 @@
+DEBUG:root:==== Loading model for source domain ====
+DEBUG:root:>>> Source Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Source Classifier <<<
+DEBUG:root:TFLSTM(
+  (lstm): LSTM(240, 32, batch_first=True)
+  (fclayers): TFMLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=32, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.5, inplace=False)
+      (3): Linear(in_features=1024, out_features=512, bias=True)
+      (4): Sigmoid()
+      (5): Linear(in_features=512, out_features=1, bias=True)
+    )
+  )
+)
+DEBUG:root:==== Training encoder for target domain ====
+DEBUG:root:>>> Target Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Discriminator <<<
+DEBUG:root:TFMLP(
+  (fclayers): Sequential(
+    (0): Linear(in_features=7920, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=1024, out_features=512, bias=True)
+    (4): Sigmoid()
+    (5): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+DEBUG:root:Source samples: 377380, Target samples: 431797
+DEBUG:root:Loss Discriminator: 0.6946952396709049 Loss Encoder: 0.6939267119041468, Domain Accuracy: 0.481424940247488
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.2112118428769049, Target Validation APS: 0.1745473957906786 after 0 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_0.pth after 0 epochs
+DEBUG:root:Loss Discriminator: 0.6948492246970545 Loss Encoder: 0.6935686604340981, Domain Accuracy: 0.3944398473059146
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.1791781601522966, Target Validation APS: 0.15555242666885227 after 1 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_1.pth after 1 epochs
+DEBUG:root:Loss Discriminator: 0.6938807399696799 Loss Encoder: 0.6935925417992931, Domain Accuracy: 0.4532680672886862
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.20920405375174783, Target Validation APS: 0.18551269116478983 after 2 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_2.pth after 2 epochs
+DEBUG:root:Loss Discriminator: 0.6935311170023629 Loss Encoder: 0.6941462763290702, Domain Accuracy: 0.45660108351006984
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.20559817582253054, Target Validation APS: 0.19117242021436442 after 3 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_3.pth after 3 epochs
+DEBUG:root:Loss Discriminator: 0.6927716779167692 Loss Encoder: 0.6949776358083588, Domain Accuracy: 0.519654022668262
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.20550993080240612, Target Validation APS: 0.1895218639713812 after 4 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_4.pth after 4 epochs
+DEBUG:root:Loss Discriminator: 0.6920485343588579 Loss Encoder: 0.6971243230507208, Domain Accuracy: 0.5172140473447263
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.2057616751278691, Target Validation APS: 0.20232295656889251 after 5 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_5.pth after 5 epochs
+DEBUG:root:Loss Discriminator: 0.6905277859321787 Loss Encoder: 0.701349194471192, Domain Accuracy: 0.5344295763878905
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.20309807804016214, Target Validation APS: 0.19610913727627519 after 6 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_6.pth after 6 epochs
+DEBUG:root:Loss Discriminator: 0.6900174125616845 Loss Encoder: 0.7059857892213725, Domain Accuracy: 0.5136974947458637
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.1959296488492169, Target Validation APS: 0.19225092385368664 after 7 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_7.pth after 7 epochs
+DEBUG:root:Loss Discriminator: 0.6896690487950909 Loss Encoder: 0.7091544820463309, Domain Accuracy: 0.5418168494903732
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.18143861750427634, Target Validation APS: 0.18673728733787756 after 8 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_8.pth after 8 epochs
+DEBUG:root:Loss Discriminator: 0.687305237037516 Loss Encoder: 0.7121523837059784, Domain Accuracy: 0.5291475216610482
+DEBUG:root:Source dataset size = 3385887
+DEBUG:root:Target dataset size = 4030010
+DEBUG:root:Source Validation APS: 0.18163317159958714, Target Validation APS: 0.1807826353885628 after 9 epochs.
+DEBUG:root:Encoder saved at ../../torch_models/mm10/RXRA/adda/adda_tgt_enc_9.pth after 9 epochs
