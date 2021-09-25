@@ -1,3 +1,7 @@
+! Implement CoGAN.
+Figure out adda stopping criterion.
+Implement adda stopping criterion.
+Read DSN, a reconstruction network.
 - Finish writing DADNN review till ADDA.
 - Review CoGAN, look at how it's implemented.
 - Validation with unweighted dataset.
@@ -10,5 +14,4 @@
 - Adda no need for training source, use hybrid model training weights.
 Create a CLI for hybrid, dann, adda training
 Bound-Unbound sites results.
-! Implement CoGAN.
 Include FP,FN,TP,TN in your analysis. Also include how many changed from FP -> TP, FN -> TN and vice versa.
