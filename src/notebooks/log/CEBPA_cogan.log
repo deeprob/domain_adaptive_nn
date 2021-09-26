@@ -34,16 +34,13 @@ DEBUG:root:TFCoCD(
 )
 DEBUG:root:The model has 5276672 parameters.
 DEBUG:root:Making samplers...
-DEBUG:root:Epoch: 0, Validation Loss: 0.3637415437510202, Validation APS: 0.1592215193100356
-DEBUG:root:Epoch: 1, Validation Loss: 0.3771440096861469, Validation APS: 0.21749636511517806
-DEBUG:root:Epoch: 2, Validation Loss: 0.3244331121134847, Validation APS: 0.24043151070804694
-DEBUG:root:Epoch: 3, Validation Loss: 0.3098939861630454, Validation APS: 0.25670753471251645
-DEBUG:root:Epoch: 4, Validation Loss: 0.24353552856720218, Validation APS: 0.27287024111274083
-DEBUG:root:Epoch: 5, Validation Loss: 0.30985053026721204, Validation APS: 0.27670935681516284
-DEBUG:root:Epoch: 6, Validation Loss: 0.3640103264488206, Validation APS: 0.28097961748230194
-DEBUG:root:Epoch: 7, Validation Loss: 0.29914004525807003, Validation APS: 0.29251296302523305
-DEBUG:root:Epoch: 8, Validation Loss: 0.28317531740507784, Validation APS: 0.30170182958502234
-DEBUG:root:Epoch: 9, Validation Loss: 0.2807979010003277, Validation APS: 0.2999570694807637
-DEBUG:root:Epoch: 10, Validation Loss: 0.3755019585554442, Validation APS: 0.2961735363336999
-DEBUG:root:Epoch: 11, Validation Loss: 0.2686626701744271, Validation APS: 0.30348890558188446
-DEBUG:root:Epoch: 12, Validation Loss: 0.24805412489660322, Validation APS: 0.30954346562292184
+DEBUG:root:Discriminator Loss: 0.6140407621489669, Classification Loss: 0.544206851537869, Fake/Real Accuracy: 0.43071955360846076, Generator Loss: 0.6928391242017392
+DEBUG:root:Epoch: 0, Validation Loss: 0.4283194628915619, Validation APS: 0.1684461570853315
+DEBUG:root:Discriminator Loss: 0.46490961616709675, Classification Loss: 0.3951025004519909, Fake/Real Accuracy: 0.4100817217959338, Generator Loss: 0.6916619361880815
+DEBUG:root:Epoch: 1, Validation Loss: 0.3601748927864328, Validation APS: 0.22593903827092754
+DEBUG:root:Discriminator Loss: 0.4302331615364531, Classification Loss: 0.36074771666887806, Fake/Real Accuracy: 0.44913004523537936, Generator Loss: 0.6917366025013714
+DEBUG:root:Epoch: 2, Validation Loss: 0.42530578419369003, Validation APS: 0.24734279191204475
+DEBUG:root:Discriminator Loss: 0.41117213692397137, Classification Loss: 0.3416407930064836, Fake/Real Accuracy: 0.3914986811748236, Generator Loss: 0.6915577351428934
+DEBUG:root:Epoch: 3, Validation Loss: 0.3071762032088575, Validation APS: 0.26483392208213874
+DEBUG:root:Discriminator Loss: 0.3993397155140801, Classification Loss: 0.32986279686102504, Fake/Real Accuracy: 0.4031578896204903, Generator Loss: 0.6918316227007304
+DEBUG:root:Epoch: 4, Validation Loss: 0.21674276864145567, Validation APS: 0.280222426975814

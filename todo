@@ -1,4 +1,4 @@
-! Implement CoGAN.
+Implement CoGAN with lower epochs, higher epoch scores are bad, target auprc 0.12.
 Figure out adda stopping criterion.
 Implement adda stopping criterion.
 Read DSN, a reconstruction network.
