@@ -331,11 +331,11 @@ if __name__ == "__main__":
     info = train_dann(args)
 
     classifier = TFDANN(args)
-    # Testing model on source data
-    source_dataset = datasets.TFDataset.load_dataset_and_vectorizer_from_path(args.source_csv, 
-                                                                    args.source_genome_fasta, 
-                                                                    ohe=True)
-    utils.eval_model(classifier, source_dataset, args, dataset_type="src", model="dann")
+    # Testing model on source data not required, wasting time
+#     source_dataset = datasets.TFDataset.load_dataset_and_vectorizer_from_path(args.source_csv, 
+#                                                                     args.source_genome_fasta, 
+#                                                                     ohe=True)
+#     utils.eval_model(classifier, source_dataset, args, dataset_type="src", model="dann")
 
     # Testing model on target dataset
     target_dataset = datasets.TFDataset.load_dataset_and_vectorizer_from_path(args.target_csv, 

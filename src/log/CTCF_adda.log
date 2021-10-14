@@ -1,0 +1,52 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/CTCF/adda/adda.pth
+INFO:root:Using CUDA: True
+DEBUG:root:==== Loading model for source domain ====
+DEBUG:root:>>> Source Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Source Classifier <<<
+DEBUG:root:TFLSTM(
+  (lstm): LSTM(240, 32, batch_first=True)
+  (fclayers): TFMLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=32, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.5, inplace=False)
+      (3): Linear(in_features=1024, out_features=512, bias=True)
+      (4): Sigmoid()
+      (5): Linear(in_features=512, out_features=1, bias=True)
+    )
+  )
+)
+DEBUG:root:==== Training encoder for target domain ====
+DEBUG:root:>>> Target Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Discriminator <<<
+DEBUG:root:TFMLP(
+  (fclayers): Sequential(
+    (0): Linear(in_features=7920, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=1024, out_features=512, bias=True)
+    (4): Sigmoid()
+    (5): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+DEBUG:root:Source samples: 377380, Target samples: 431797
+DEBUG:root:DA: 0.4858257606054672, Tgt Enc Loss: 0.6951862017205804, DSCM Loss: 0.6948526428488951
+DEBUG:root:DA: 0.4200399403857942, Tgt Enc Loss: 0.694387561026227, DSCM Loss: 0.6950382942396579
+DEBUG:root:DA: 0.46589882154625983, Tgt Enc Loss: 0.6934177759059248, DSCM Loss: 0.6940126356526508
+DEBUG:root:DA: 0.43161255907092505, Tgt Enc Loss: 0.6942299585814704, DSCM Loss: 0.6945529465706092
+DEBUG:root:DA: 0.4787027526519456, Tgt Enc Loss: 0.6925758527771273, DSCM Loss: 0.6941399244915865

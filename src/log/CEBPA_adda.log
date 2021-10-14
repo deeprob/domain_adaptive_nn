@@ -1,0 +1,48 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/CEBPA/adda/adda.pth
+INFO:root:Using CUDA: True
+DEBUG:root:==== Loading model for source domain ====
+DEBUG:root:>>> Source Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Source Classifier <<<
+DEBUG:root:TFLSTM(
+  (lstm): LSTM(240, 32, batch_first=True)
+  (fclayers): TFMLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=32, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.5, inplace=False)
+      (3): Linear(in_features=1024, out_features=512, bias=True)
+      (4): Sigmoid()
+      (5): Linear(in_features=512, out_features=1, bias=True)
+    )
+  )
+)
+DEBUG:root:==== Training encoder for target domain ====
+DEBUG:root:>>> Target Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Discriminator <<<
+DEBUG:root:TFMLP(
+  (fclayers): Sequential(
+    (0): Linear(in_features=7920, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=1024, out_features=512, bias=True)
+    (4): Sigmoid()
+    (5): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+DEBUG:root:Source samples: 377380, Target samples: 431797
+DEBUG:root:DA: 0.4896568190559392, Tgt Enc Loss: 0.6950544696326493, DSCM Loss: 0.6948166704973253

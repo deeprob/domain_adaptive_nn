@@ -1,34 +1,30 @@
 INFO:root:Expanded filepaths: 
-INFO:root:	../torch_models/mm10/Hnf4a/hybrid/hybrid.pth
+INFO:root:	../torch_models/hg38/Hnf4a/hybrid/hybrid.pth
 INFO:root:Using CUDA: True
 DEBUG:root:Loading dataset and creating vectorizer...
 DEBUG:root:Initializing model...
 DEBUG:root:The model has 613617 parameters.
-DEBUG:root:Training 613617 parameters with 909927 instances at a rate of 1.482891 instances per parameter.
+DEBUG:root:Training 613617 parameters with 811680 instances at a rate of 1.32278 instances per parameter.
 DEBUG:root:Starting epoch: 0
-DEBUG:root:Epoch: 0, Validation Loss: 0.2992216864386004, Validation APS: 0.19538907179722304
+DEBUG:root:Epoch: 0, Validation Loss: 0.35550329206082926, Validation APS: 0.1745486483069987
 DEBUG:root:Starting epoch: 1
-DEBUG:root:Epoch: 1, Validation Loss: 0.14361958344183512, Validation APS: 0.2403403977690095
+DEBUG:root:Epoch: 1, Validation Loss: 0.24238727340685345, Validation APS: 0.21982167968530075
 DEBUG:root:Starting epoch: 2
-DEBUG:root:Epoch: 2, Validation Loss: 0.22019120182539167, Validation APS: 0.2592758564751835
+DEBUG:root:Epoch: 2, Validation Loss: 0.32248246716276185, Validation APS: 0.23140407272316654
 DEBUG:root:Starting epoch: 3
-DEBUG:root:Epoch: 3, Validation Loss: 0.16268129638538822, Validation APS: 0.2554865637706793
+DEBUG:root:Epoch: 3, Validation Loss: 0.29545309740737485, Validation APS: 0.23598214094665723
 DEBUG:root:Starting epoch: 4
-DEBUG:root:Epoch: 4, Validation Loss: 0.22429677170115053, Validation APS: 0.2558978140029605
+DEBUG:root:Epoch: 4, Validation Loss: 0.2742805970427989, Validation APS: 0.24086453080469183
 DEBUG:root:Starting epoch: 5
-DEBUG:root:Epoch: 5, Validation Loss: 0.2339878595682365, Validation APS: 0.25506588897802984
+DEBUG:root:Epoch: 5, Validation Loss: 0.2164882979653965, Validation APS: 0.2450108921194152
 DEBUG:root:Starting epoch: 6
-DEBUG:root:Epoch: 6, Validation Loss: 0.20571655169911066, Validation APS: 0.2569610824153273
+DEBUG:root:Epoch: 6, Validation Loss: 0.28280110967616573, Validation APS: 0.24420648439750947
 DEBUG:root:Starting epoch: 7
-DEBUG:root:Epoch: 7, Validation Loss: 0.1865536135654818, Validation APS: 0.2611458107386578
+DEBUG:root:Epoch: 7, Validation Loss: 0.3212464100123873, Validation APS: 0.237941090922425
 DEBUG:root:Starting epoch: 8
-DEBUG:root:Epoch: 8, Validation Loss: 0.17783039242155976, Validation APS: 0.25743838599807045
+DEBUG:root:Epoch: 8, Validation Loss: 0.2990779794215332, Validation APS: 0.23806281252067202
 DEBUG:root:Starting epoch: 9
-DEBUG:root:Epoch: 9, Validation Loss: 0.20963651025755778, Validation APS: 0.2539030234533087
+DEBUG:root:Epoch: 9, Validation Loss: 0.2420797922643756, Validation APS: 0.24243292144057862
 DEBUG:root:Starting epoch: 10
-DEBUG:root:Epoch: 10, Validation Loss: 0.19267200731297351, Validation APS: 0.2567742386654407
-DEBUG:root:Starting epoch: 11
-DEBUG:root:Epoch: 11, Validation Loss: 0.18302055894906016, Validation APS: 0.25874498271161733
-DEBUG:root:Starting epoch: 12
-DEBUG:root:Epoch: 12, Validation Loss: 0.19263786156371365, Validation APS: 0.25559935200801365
+DEBUG:root:Epoch: 10, Validation Loss: 0.22574625817675448, Validation APS: 0.24495220042563992
 DEBUG:root:Early stopping criterion fulfilled!

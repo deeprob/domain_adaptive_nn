@@ -3,12 +3,12 @@
 #PBS -W umask=0007
 #PBS -W group_list=sam77_collab
 #PBS -j oe
-#PBS -l walltime=10:00:00
+#PBS -l walltime=01:00:00
 #PBS -l nodes=1:ppn=4:gpus=1:rhel7
 #PBS -l pmem=8gb
 #PBS -A sam77_e_g_gc_default
 
-# example submission script: qsub -v TF="CEBPA",SG="mm10",TG="hg38",SGF="/storage/home/dzb5732/work/domain_adaptive_nn/genomes/mm10_no_alt_analysis_set_ENCODE.fasta",TGF="/storage/home/dzb5732/work/domain_adaptive_nn/genomes/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta" run_hybrid.sh 
+
 #load python from SW Stack
 module load anaconda3
 
@@ -37,4 +37,5 @@ unset __conda_setup
 #Activate environment
 conda activate /storage/home/d/dzb5732/work/.dda
 
-python ./Hybrid.py $TF --sg $SG --tg $TG --sgf $SGF --tgf $TGF
+python ./DRCN.py $TF
+

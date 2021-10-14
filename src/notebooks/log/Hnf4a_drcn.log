@@ -1,0 +1,60 @@
+DEBUG:root:Loading source and target data...
+DEBUG:root:Initializing model...
+DEBUG:root:DRCN(
+  (featurizer): encoder(
+    (featurizer): TFCNN(
+      (featurizer): Sequential(
+        (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+        (1): ReLU()
+        (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+      )
+    )
+  )
+  (classifier): TFLSTM(
+    (lstm): LSTM(240, 32, batch_first=True)
+    (fclayers): TFMLP(
+      (fclayers): Sequential(
+        (0): Linear(in_features=32, out_features=1024, bias=True)
+        (1): ReLU()
+        (2): Dropout(p=0.5, inplace=False)
+        (3): Linear(in_features=1024, out_features=512, bias=True)
+        (4): Sigmoid()
+        (5): Linear(in_features=512, out_features=1, bias=True)
+      )
+    )
+  )
+  (decoder): decoder(
+    (dconv0): ConvTranspose1d(240, 120, kernel_size=(4,), stride=(1,))
+    (bn0): BatchNorm1d(120, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu0): PReLU(num_parameters=1)
+    (dconv1): ConvTranspose1d(120, 64, kernel_size=(3,), stride=(2,), padding=(2,))
+    (bn1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu1): PReLU(num_parameters=1)
+    (dconv2): ConvTranspose1d(64, 32, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn2): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu2): PReLU(num_parameters=1)
+    (dconv3): ConvTranspose1d(32, 16, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn3): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu3): PReLU(num_parameters=1)
+    (dconv4): ConvTranspose1d(16, 8, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn4): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu4): PReLU(num_parameters=1)
+    (dconv5): ConvTranspose1d(8, 4, kernel_size=(2,), stride=(1,), padding=(2,))
+    (softmax): Softmax(dim=1)
+  )
+)
+DEBUG:root:The model has 760234 parameters.
+DEBUG:root:Making samplers...
+DEBUG:root:Reconstruction Loss: 0.18174131972127122, Classification Loss: 0.20632705861078382
+DEBUG:root:Epoch: 0, Validation Loss: 0.34031884695416376, Validation Reconstruction Loss: 0.17672776581371544, Validation APS: 0.17820500949813817
+DEBUG:root:Reconstruction Loss: 0.1783203410546613, Classification Loss: 0.2022842980049742
+DEBUG:root:Epoch: 1, Validation Loss: 0.3644878200848212, Validation Reconstruction Loss: 0.17598863347910393, Validation APS: 0.17396268411898355
+DEBUG:root:Reconstruction Loss: 0.177981987307233, Classification Loss: 0.20592910513976426
+DEBUG:root:Epoch: 2, Validation Loss: 0.368266174426536, Validation Reconstruction Loss: 0.17584005480080692, Validation APS: 0.1736862601445787
+DEBUG:root:Reconstruction Loss: 0.17781300073458436, Classification Loss: 0.20388629651819296
+DEBUG:root:Epoch: 3, Validation Loss: 0.35902872716054235, Validation Reconstruction Loss: 0.17597907130266835, Validation APS: 0.1753683173961016
+DEBUG:root:Reconstruction Loss: 0.17770071150759617, Classification Loss: 0.2022788327845862
+DEBUG:root:Epoch: 4, Validation Loss: 0.3490021107753845, Validation Reconstruction Loss: 0.17594350015761162, Validation APS: 0.17581417604673483
+DEBUG:root:Reconstruction Loss: 0.17761716067057085, Classification Loss: 0.2014166928021762
+DEBUG:root:Epoch: 5, Validation Loss: 0.37227135222036, Validation Reconstruction Loss: 0.1760086880942386, Validation APS: 0.1751822351280072
+DEBUG:root:Early stopping criterion fulfilled!

@@ -1,0 +1,103 @@
+DEBUG:root:==== Loading model for source domain ====
+DEBUG:root:>>> Source Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Source Classifier <<<
+DEBUG:root:TFLSTM(
+  (lstm): LSTM(240, 32, batch_first=True)
+  (fclayers): TFMLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=32, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.5, inplace=False)
+      (3): Linear(in_features=1024, out_features=512, bias=True)
+      (4): Sigmoid()
+      (5): Linear(in_features=512, out_features=1, bias=True)
+    )
+  )
+)
+DEBUG:root:==== Training encoder for target domain ====
+DEBUG:root:>>> Target Encoder <<<
+DEBUG:root:TFCNN(
+  (featurizer): Sequential(
+    (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+DEBUG:root:>>> Discriminator <<<
+DEBUG:root:TFMLP(
+  (fclayers): Sequential(
+    (0): Linear(in_features=7920, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=1024, out_features=512, bias=True)
+    (4): Sigmoid()
+    (5): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+DEBUG:root:Source samples: 377380, Target samples: 431797
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/torch/nn/__init__.py
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/torch/nn/modules/__init__.py
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/torch/nn/modules/module.py
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 1; new: 1
+DEBUG:parso.python.diff:-> code[replace] old[1:1] new[1:1]
+DEBUG:parso.python.diff:parse_part from 1 to 1 (to 0 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/torch/serialization.py
+DEBUG:parso.cache:pickle loaded: /storage/home/d/dzb5732/work/.dda/lib/python3.7/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 1; new: 2
+DEBUG:parso.python.diff:-> code[replace] old[1:1] new[1:2]
+DEBUG:parso.python.diff:parse_part from 1 to 2 (to 1 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 2
+DEBUG:parso.python.diff:-> code[equal] old[1:1] new[1:1]
+DEBUG:parso.python.diff:copy old[1:1] new[1:1]
+DEBUG:parso.python.diff:-> code[replace] old[2:2] new[2:2]
+DEBUG:parso.python.diff:parse_part from 2 to 2 (to 1 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 2
+DEBUG:parso.python.diff:-> code[equal] old[1:1] new[1:1]
+DEBUG:parso.python.diff:copy old[1:1] new[1:1]
+DEBUG:parso.python.diff:-> code[replace] old[2:2] new[2:2]
+DEBUG:parso.python.diff:parse_part from 2 to 2 (to 1 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 2
+DEBUG:parso.python.diff:-> code[equal] old[1:1] new[1:1]
+DEBUG:parso.python.diff:copy old[1:1] new[1:1]
+DEBUG:parso.python.diff:-> code[replace] old[2:2] new[2:2]
+DEBUG:parso.python.diff:parse_part from 2 to 2 (to 1 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 1
+DEBUG:parso.python.diff:-> code[replace] old[1:2] new[1:1]
+DEBUG:parso.python.diff:parse_part from 1 to 1 (to 0 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 1; new: 1
+DEBUG:parso.python.diff:-> code[replace] old[1:1] new[1:1]
+DEBUG:parso.python.diff:parse_part from 1 to 1 (to 0 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 1; new: 2
+DEBUG:parso.python.diff:-> code[replace] old[1:1] new[1:2]
+DEBUG:parso.python.diff:parse_part from 1 to 2 (to 1 in part parser)
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 2; new: 3
+DEBUG:parso.python.diff:-> code[equal] old[1:1] new[1:1]
+DEBUG:parso.python.diff:copy old[1:1] new[1:1]
+DEBUG:parso.python.diff:-> code[replace] old[2:2] new[2:3]
+DEBUG:parso.python.diff:parse_part from 2 to 3 (to 2 in part parser)
+DEBUG:parso.python.diff:diff parser end

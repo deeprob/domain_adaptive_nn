@@ -63,6 +63,16 @@ def make_train_state_adda(args):
             'save_model': False}
 
 
+def make_train_state_ae(args):
+    return {'stop_early': False,
+            'early_stopping_step': 0,
+            'early_stopping_best_val': 1e9,
+            'learning_rate': args.learning_rate,
+            'epoch_index': 0,
+            'train_loss': [],
+            'val_loss': []}
+
+
 def update_train_state_adda(args, train_state):
     """Handle the training state updates. Determines whether to stop model training early
 
@@ -117,14 +127,16 @@ def update_train_state(args, model, train_state):
     # Save one model at least
     if train_state['epoch_index'] == 0:
         torch.save(model.state_dict(), train_state['model_filename'])
+        curr_aps = train_state['val_aps'][0]
+        train_state['early_stopping_best_val'] = curr_aps
         train_state['stop_early'] = False
 
     # Save model if performance improved
     elif train_state['epoch_index'] >= 1:
         apc_tm1, apc_t = train_state['val_aps'][-2:] # looking at the last two validation aps
 
-        # If apc worsened or remained almost the same within a tolerance level
-        if apc_t <= train_state['early_stopping_best_val'] or np.abs(apc_tm1 - apc_t)<args.tolerance:
+        # If apc worsened 
+        if apc_t <= train_state['early_stopping_best_val']:
             # Update step
             train_state['early_stopping_step'] += 1 # updating early stopping info
         # apc increased
@@ -132,6 +144,47 @@ def update_train_state(args, model, train_state):
             # Save the best model
             if apc_t > train_state['early_stopping_best_val']:
                 torch.save(model.state_dict(), train_state['model_filename'])
+                train_state['early_stopping_best_val'] = apc_t
+
+            # Reset early stopping step
+            train_state['early_stopping_step'] = 0
+
+        # Stop early ?
+        train_state['stop_early'] = \
+            train_state['early_stopping_step'] >= args.early_stopping_criteria
+
+    return train_state
+
+
+def update_train_state_ae(train_state):
+    """Handle the training state updates. Determines whether to stop model training early
+
+    Components:
+     - Early Stopping: Prevent overfitting.
+     - Model Checkpoint: Model is saved if the model is better
+
+    :param args: main arguments
+    :param train_state: a dictionary representing the training state values
+    :returns:
+        a new train_state
+    """
+
+    # Save one model at least
+    if train_state['epoch_index'] == 0:
+        train_state['stop_early'] = False
+
+    # Save model if performance improved
+    elif train_state['epoch_index'] >= 1:
+        apc_tm1, apc_t = train_state['val_loss'][-2:] # looking at the last two validation aps
+
+        # If apc worsened or remained almost the same within a tolerance level
+        if apc_t >= train_state['early_stopping_best_val'] or np.abs(apc_tm1 - apc_t)<args.tolerance:
+            # Update step
+            train_state['early_stopping_step'] += 1 # updating early stopping info
+        # apc increased
+        else:
+            # Save the best model
+            if apc_t < train_state['early_stopping_best_val']:
                 train_state['early_stopping_best_val'] = apc_t
 
             # Reset early stopping step
@@ -237,7 +290,7 @@ def eval_model(classifier, dataset, args, dataset_split="test", dataset_type="sr
 
     for batch_index, batch_dict in enumerate(batch_generator):
         # compute the output
-        if model=="hybrid":
+        if model=="hybrid" or model=="drcn":
             y_pred = classifier(x_in=batch_dict['x_data'].float())
         elif model=="dann":
             y_pred, _ = classifier(x_in=batch_dict['x_data'].float())

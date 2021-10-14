@@ -1,0 +1,60 @@
+INFO:root:Expanded filepaths: 
+INFO:root:	../torch_models/mm10/CEBPA/drcn/drcn.pth
+INFO:root:Using CUDA: True
+DEBUG:root:Loading source and target data...
+DEBUG:root:Initializing model...
+DEBUG:root:DRCN(
+  (featurizer): encoder(
+    (featurizer): TFCNN(
+      (featurizer): Sequential(
+        (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+        (1): ReLU()
+        (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+      )
+    )
+  )
+  (classifier): TFLSTM(
+    (lstm): LSTM(240, 32, batch_first=True)
+    (fclayers): TFMLP(
+      (fclayers): Sequential(
+        (0): Linear(in_features=32, out_features=1024, bias=True)
+        (1): ReLU()
+        (2): Dropout(p=0.5, inplace=False)
+        (3): Linear(in_features=1024, out_features=512, bias=True)
+        (4): Sigmoid()
+        (5): Linear(in_features=512, out_features=1, bias=True)
+      )
+    )
+  )
+  (decoder): decoder(
+    (dconv0): ConvTranspose1d(240, 120, kernel_size=(4,), stride=(1,))
+    (bn0): BatchNorm1d(120, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu0): PReLU(num_parameters=1)
+    (dconv1): ConvTranspose1d(120, 64, kernel_size=(3,), stride=(2,), padding=(2,))
+    (bn1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu1): PReLU(num_parameters=1)
+    (dconv2): ConvTranspose1d(64, 32, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn2): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu2): PReLU(num_parameters=1)
+    (dconv3): ConvTranspose1d(32, 16, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn3): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu3): PReLU(num_parameters=1)
+    (dconv4): ConvTranspose1d(16, 8, kernel_size=(3,), stride=(2,), padding=(4,))
+    (bn4): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+    (prelu4): PReLU(num_parameters=1)
+    (dconv5): ConvTranspose1d(8, 4, kernel_size=(2,), stride=(1,), padding=(2,))
+    (softmax): Softmax(dim=1)
+  )
+)
+DEBUG:root:The model has 760234 parameters.
+DEBUG:root:Making samplers...
+DEBUG:root:Reconstruction Loss: 0.18553628738292935, Classification Loss: 0.33680643046092645
+DEBUG:root:Model saved at ../torch_models/mm10/CEBPA/drcn/drcn.pth
+DEBUG:root:Reconstruction Loss: 0.17864376499862247, Classification Loss: 0.2466901705828969
+DEBUG:root:Model saved at ../torch_models/mm10/CEBPA/drcn/drcn.pth
+DEBUG:root:Reconstruction Loss: 0.1774139662167269, Classification Loss: 0.24338890472334085
+DEBUG:root:Model saved at ../torch_models/mm10/CEBPA/drcn/drcn.pth
+DEBUG:root:Reconstruction Loss: 0.17707548327669662, Classification Loss: 0.2464001657006271
+DEBUG:root:Model saved at ../torch_models/mm10/CEBPA/drcn/drcn.pth
+DEBUG:root:Reconstruction Loss: 0.1769219481362079, Classification Loss: 0.23898541058846814
+DEBUG:root:Model saved at ../torch_models/mm10/CEBPA/drcn/drcn.pth

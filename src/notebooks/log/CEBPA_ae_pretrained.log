@@ -1,0 +1,51 @@
+DEBUG:root:Initializing models...
+DEBUG:root:Initializing models...
+DEBUG:root:encoder(
+  (featurizer): TFCNN(
+    (featurizer): Sequential(
+      (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+      (1): ReLU()
+      (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+    )
+  )
+)
+DEBUG:root:decoder(
+  (dconv0): ConvTranspose1d(240, 120, kernel_size=(4,), stride=(1,))
+  (bn0): BatchNorm1d(120, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+  (prelu0): PReLU(num_parameters=1)
+  (dconv1): ConvTranspose1d(120, 64, kernel_size=(3,), stride=(2,), padding=(2,))
+  (bn1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+  (prelu1): PReLU(num_parameters=1)
+  (dconv2): ConvTranspose1d(64, 32, kernel_size=(3,), stride=(2,), padding=(4,))
+  (bn2): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+  (prelu2): PReLU(num_parameters=1)
+  (dconv3): ConvTranspose1d(32, 16, kernel_size=(3,), stride=(2,), padding=(4,))
+  (bn3): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+  (prelu3): PReLU(num_parameters=1)
+  (dconv4): ConvTranspose1d(16, 8, kernel_size=(3,), stride=(2,), padding=(4,))
+  (bn4): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+  (prelu4): PReLU(num_parameters=1)
+  (dconv5): ConvTranspose1d(8, 4, kernel_size=(2,), stride=(1,), padding=(2,))
+  (softmax): Softmax(dim=1)
+)
+DEBUG:root:The model has 166057 parameters.
+DEBUG:root:Reconstruction Loss Train: 0.1724192751283274
+DEBUG:root:Reconstruction Loss Valid: 0.17251238245872938
+DEBUG:root:Reconstruction Loss Train: 0.17213451138650185
+DEBUG:root:Reconstruction Loss Valid: 0.17247655593855363
+DEBUG:root:Reconstruction Loss Train: 0.17208340725315163
+DEBUG:root:Reconstruction Loss Valid: 0.17242006948039787
+DEBUG:root:Reconstruction Loss Train: 0.17205418197377298
+DEBUG:root:Reconstruction Loss Valid: 0.17238608733483934
+DEBUG:root:Reconstruction Loss Train: 0.17203265968454362
+DEBUG:root:Reconstruction Loss Valid: 0.17241081457798646
+DEBUG:root:Reconstruction Loss Train: 0.17200605382559542
+DEBUG:root:Reconstruction Loss Valid: 0.17242138960938538
+DEBUG:root:Reconstruction Loss Train: 0.1719690887253206
+DEBUG:root:Reconstruction Loss Valid: 0.17237401962470097
+DEBUG:root:Reconstruction Loss Train: 0.17196047144019108
+DEBUG:root:Reconstruction Loss Valid: 0.1723520386086149
+DEBUG:root:Reconstruction Loss Train: 0.17195430627683084
+DEBUG:root:Reconstruction Loss Valid: 0.17235305634843323
+DEBUG:root:Reconstruction Loss Train: 0.1719491300678463
+DEBUG:root:Reconstruction Loss Valid: 0.17230957751251333

@@ -3,3 +3,5 @@ DCGAN training pytorch: https://pytorch.org/tutorials/beginner/dcgan_faces_tutor
 Saliency features: ref: https://www.nature.com/articles/s41576-019-0122-6#Sec11 paper: https://arxiv.org/pdf/1312.6034.pdf
 CoGAN repo: https://github.com/mingyuliutw/CoGAN
 gitignore doc: https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+LSTM Autoencoder: *Very hard to train*: https://machinelearningmastery.com/lstm-autoencoders/; https://arxiv.org/abs/1502.04681; https://curiousily.com/posts/time-series-anomaly-detection-using-lstm-autoencoder-with-pytorch-in-python/; https://github.com/shobrook/sequitur/blob/master/sequitur/models/conv_lstm_ae.py; https://github.com/hellojinwoo/TorchCoder/blob/master/autoencoders/rae.py
+DRCN: https://paperswithcode.com/paper/deep-reconstruction-classification-networks

@@ -1,0 +1,85 @@
+DEBUG:root:Loading source and target data...
+DEBUG:root:Initializing model...
+DEBUG:root:TFCoCD(
+  (featurizer): TFCNN(
+    (featurizer): Sequential(
+      (0): Conv1d(4, 240, kernel_size=(20,), stride=(1,), padding=same)
+      (1): ReLU()
+      (2): MaxPool1d(kernel_size=15, stride=15, padding=0, dilation=1, ceil_mode=False)
+    )
+  )
+  (cd_lstm): TFLSTM_(
+    (lstm): LSTM(240, 32, batch_first=True)
+  )
+  (cd_mlp): TFMLP_(
+    (fclayers): Sequential(
+      (0): Linear(in_features=32, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Dropout(p=0.5, inplace=False)
+      (3): Linear(in_features=256, out_features=128, bias=True)
+      (4): Sigmoid()
+      (5): Linear(in_features=128, out_features=64, bias=True)
+    )
+  )
+  (c_slp): TFSLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+  (d_slp): TFSLP(
+    (fclayers): Sequential(
+      (0): Linear(in_features=64, out_features=1, bias=True)
+    )
+  )
+)
+DEBUG:root:The model has 5311776 parameters.
+DEBUG:root:Making samplers...
+DEBUG:root:Discriminator Loss: 0.6128589434774028, Classification Loss: 0.5426566196162891, Fake/Real Accuracy: 0.4339291269182912, Generator Loss: 0.691760653544143
+DEBUG:root:Epoch: 0, Validation Loss: 0.6169844702728751, Validation APS: 0.07441792403447817
+DEBUG:root:Discriminator Loss: 0.45837061689360886, Classification Loss: 0.38746858288988606, Fake/Real Accuracy: 0.42489501244297073, Generator Loss: 0.6918315059141895
+DEBUG:root:Epoch: 1, Validation Loss: 0.5539684210734716, Validation APS: 0.09851630449054877
+DEBUG:root:Discriminator Loss: 0.42504749124176633, Classification Loss: 0.3539282459130634, Fake/Real Accuracy: 0.4257666683948569, Generator Loss: 0.6920493247967875
+DEBUG:root:Epoch: 2, Validation Loss: 0.5744653575387428, Validation APS: 0.10707787650933963
+DEBUG:root:Discriminator Loss: 0.40520072321410194, Classification Loss: 0.3348072644265929, Fake/Real Accuracy: 0.4227045313148075, Generator Loss: 0.6920798974430747
+DEBUG:root:Epoch: 3, Validation Loss: 0.4808950615003035, Validation APS: 0.12344746298776803
+DEBUG:root:Discriminator Loss: 0.39168171802777496, Classification Loss: 0.3210425594816162, Fake/Real Accuracy: 0.41606504043965103, Generator Loss: 0.6918775510956087
+DEBUG:root:Epoch: 4, Validation Loss: 0.34317997224591085, Validation APS: 0.132713263427514
+DEBUG:root:Discriminator Loss: 0.3813798578262125, Classification Loss: 0.3112633691529725, Fake/Real Accuracy: 0.4380800238490231, Generator Loss: 0.6918816598976668
+DEBUG:root:Epoch: 5, Validation Loss: 0.4869018053207568, Validation APS: 0.1297100205846624
+DEBUG:root:Discriminator Loss: 0.3731941482811635, Classification Loss: 0.3033386192835749, Fake/Real Accuracy: 0.4460804645375359, Generator Loss: 0.6921548087139042
+DEBUG:root:Epoch: 6, Validation Loss: 0.573322385061992, Validation APS: 0.12938064312955777
+DEBUG:root:Discriminator Loss: 0.36711781456207465, Classification Loss: 0.2969521773258264, Fake/Real Accuracy: 0.42638233616756527, Generator Loss: 0.6919790766314319
+DEBUG:root:Epoch: 7, Validation Loss: 0.46849121903146235, Validation APS: 0.13989409358510696
+DEBUG:root:Discriminator Loss: 0.36243617909793213, Classification Loss: 0.29272827426955084, Fake/Real Accuracy: 0.4514140916632097, Generator Loss: 0.6921523009677581
+DEBUG:root:Epoch: 8, Validation Loss: 0.4943753156190905, Validation APS: 0.14269713398767006
+DEBUG:root:Discriminator Loss: 0.3584845189742153, Classification Loss: 0.2883807697523836, Fake/Real Accuracy: 0.44319978743260013, Generator Loss: 0.6920857743844088
+DEBUG:root:Epoch: 9, Validation Loss: 0.4052232931447331, Validation APS: 0.14383265847725824
+DEBUG:root:Discriminator Loss: 0.3553538818185824, Classification Loss: 0.28592520399070914, Fake/Real Accuracy: 0.48906055578598057, Generator Loss: 0.6925118887192081
+DEBUG:root:Epoch: 10, Validation Loss: 0.5161127991822866, Validation APS: 0.14907135392879878
+DEBUG:root:Discriminator Loss: 0.352388663964492, Classification Loss: 0.2828237837445487, Fake/Real Accuracy: 0.47745035773537975, Generator Loss: 0.6919731007898937
+DEBUG:root:Epoch: 11, Validation Loss: 0.4126895999079137, Validation APS: 0.14878506026440863
+DEBUG:root:Discriminator Loss: 0.35066234664346535, Classification Loss: 0.2810395024145146, Fake/Real Accuracy: 0.4357858513065109, Generator Loss: 0.6915569463516855
+DEBUG:root:Epoch: 12, Validation Loss: 0.4484942308621163, Validation APS: 0.14211639366050635
+DEBUG:root:Discriminator Loss: 0.34884407349959823, Classification Loss: 0.27921176423044075, Fake/Real Accuracy: 0.42326511302364167, Generator Loss: 0.6919369561476427
+DEBUG:root:Epoch: 13, Validation Loss: 0.4823110910721846, Validation APS: 0.13925460475140164
+DEBUG:root:Discriminator Loss: 0.3462617869497785, Classification Loss: 0.27669115765047303, Fake/Real Accuracy: 0.4697804334301117, Generator Loss: 0.6920594081301157
+DEBUG:root:Epoch: 14, Validation Loss: 0.4148669717774233, Validation APS: 0.1406971822703466
+DEBUG:root:Discriminator Loss: 0.34428070678732253, Classification Loss: 0.27466662789913954, Fake/Real Accuracy: 0.4548488697635833, Generator Loss: 0.6918965761392563
+DEBUG:root:Epoch: 15, Validation Loss: 0.32479322725833576, Validation APS: 0.15014701778913517
+DEBUG:root:Discriminator Loss: 0.3435095886393537, Classification Loss: 0.2739491297070396, Fake/Real Accuracy: 0.4399723921609284, Generator Loss: 0.691497213078553
+DEBUG:root:Epoch: 16, Validation Loss: 0.45024164519219567, Validation APS: 0.13611920481131418
+DEBUG:root:Discriminator Loss: 0.34193447755424844, Classification Loss: 0.2717318172396253, Fake/Real Accuracy: 0.4359381480713412, Generator Loss: 0.6908517031934637
+DEBUG:root:Epoch: 17, Validation Loss: 0.34362524386443244, Validation APS: 0.14462080002731226
+DEBUG:root:Discriminator Loss: 0.3407193792745166, Classification Loss: 0.27100621445984424, Fake/Real Accuracy: 0.43322596951472325, Generator Loss: 0.6910882291458597
+DEBUG:root:Epoch: 18, Validation Loss: 0.4460475721752696, Validation APS: 0.15655994333638978
+DEBUG:root:Discriminator Loss: 0.33906121458047056, Classification Loss: 0.2692877667968028, Fake/Real Accuracy: 0.4247265138946487, Generator Loss: 0.6908735942538978
+DEBUG:root:Epoch: 19, Validation Loss: 0.4040817786552469, Validation APS: 0.1519087626982047
+DEBUG:root:Discriminator Loss: 0.3370642433246612, Classification Loss: 0.26721903185770707, Fake/Real Accuracy: 0.4157669276233924, Generator Loss: 0.6907785362299431
+DEBUG:root:Epoch: 20, Validation Loss: 0.4603442819895554, Validation APS: 0.14835141948945937
+DEBUG:root:Discriminator Loss: 0.33736655846615143, Classification Loss: 0.2675352344766093, Fake/Real Accuracy: 0.40751373911240246, Generator Loss: 0.6905242514432292
+DEBUG:root:Epoch: 21, Validation Loss: 0.35288226353111135, Validation APS: 0.15029851591820725
+DEBUG:root:Discriminator Loss: 0.3352807533291052, Classification Loss: 0.2654519743880557, Fake/Real Accuracy: 0.4124228795105765, Generator Loss: 0.6908174734771225
+DEBUG:root:Epoch: 22, Validation Loss: 0.47830928360813724, Validation APS: 0.1475322063836811
+DEBUG:root:Discriminator Loss: 0.33419741839726635, Classification Loss: 0.26445365991027786, Fake/Real Accuracy: 0.4095422024056415, Generator Loss: 0.691062949730719
+DEBUG:root:Epoch: 23, Validation Loss: 0.45079871310628816, Validation APS: 0.15450743704578962
+DEBUG:root:Early stopping criterion fulfilled!
