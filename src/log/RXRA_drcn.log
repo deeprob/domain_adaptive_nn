@@ -48,9 +48,133 @@ DEBUG:root:DRCN(
 )
 DEBUG:root:The model has 760234 parameters.
 DEBUG:root:Making samplers...
-DEBUG:root:Reconstruction Loss: 0.18539771479284953, Classification Loss: 0.25448357520584075
+DEBUG:root:Epoch: 0, Reconstruction Loss: 0.17375191139499924, Classification Loss: 0.590772690301972
 DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
-DEBUG:root:Reconstruction Loss: 0.17864003777503973, Classification Loss: 0.26079601562487165
+DEBUG:root:Epoch: 1, Reconstruction Loss: 0.1709863013651774, Classification Loss: 0.5523208431317265
 DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
-DEBUG:root:Reconstruction Loss: 0.17744813877308466, Classification Loss: 0.24867213084669162
+DEBUG:root:Epoch: 2, Reconstruction Loss: 0.16932780714878878, Classification Loss: 0.5295031294503936
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 3, Reconstruction Loss: 0.16810403646607194, Classification Loss: 0.515075580406576
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 4, Reconstruction Loss: 0.16712771752004693, Classification Loss: 0.503551085366175
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 5, Reconstruction Loss: 0.16634735608634785, Classification Loss: 0.49485275160039993
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 6, Reconstruction Loss: 0.16569092401374091, Classification Loss: 0.4886218454294668
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 7, Reconstruction Loss: 0.16514631861831724, Classification Loss: 0.4811779268794972
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 8, Reconstruction Loss: 0.16462121879338298, Classification Loss: 0.47332327828754023
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 9, Reconstruction Loss: 0.16404559066175578, Classification Loss: 0.4672203503830336
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 10, Reconstruction Loss: 0.16341412769692976, Classification Loss: 0.4601887946731539
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 11, Reconstruction Loss: 0.16271601556733503, Classification Loss: 0.45474069043479115
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 12, Reconstruction Loss: 0.16209272922851958, Classification Loss: 0.44794806657415503
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 13, Reconstruction Loss: 0.16153954496683512, Classification Loss: 0.4439638974001452
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 14, Reconstruction Loss: 0.16112076797102312, Classification Loss: 0.438024752959013
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 15, Reconstruction Loss: 0.1607922829968821, Classification Loss: 0.43305545507403853
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 16, Reconstruction Loss: 0.16051413774577497, Classification Loss: 0.4283385299966096
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 17, Reconstruction Loss: 0.1602547453624297, Classification Loss: 0.4249052731028132
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 18, Reconstruction Loss: 0.1600092806987535, Classification Loss: 0.41956997167463617
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 19, Reconstruction Loss: 0.1597229562410648, Classification Loss: 0.4158638058698675
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 20, Reconstruction Loss: 0.15938917638962732, Classification Loss: 0.4121537717145403
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 21, Reconstruction Loss: 0.15901493609292178, Classification Loss: 0.40930754135242364
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 22, Reconstruction Loss: 0.1586839357417741, Classification Loss: 0.405042513028572
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 23, Reconstruction Loss: 0.15847804415961142, Classification Loss: 0.4020611364186483
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 24, Reconstruction Loss: 0.15834546419517137, Classification Loss: 0.3987385635400373
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 25, Reconstruction Loss: 0.15823797252799615, Classification Loss: 0.39480375030742854
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 26, Reconstruction Loss: 0.158146547178348, Classification Loss: 0.3927826070717383
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 27, Reconstruction Loss: 0.15807498261879097, Classification Loss: 0.39043250299716886
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 28, Reconstruction Loss: 0.1580213018035019, Classification Loss: 0.38605035975147656
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 29, Reconstruction Loss: 0.15797659244184323, Classification Loss: 0.38295993379206944
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 30, Reconstruction Loss: 0.15793321272561306, Classification Loss: 0.37987685157803047
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 31, Reconstruction Loss: 0.15788425949185797, Classification Loss: 0.3758471425085995
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 32, Reconstruction Loss: 0.15783946670033308, Classification Loss: 0.3739183755202349
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 33, Reconstruction Loss: 0.15780942335106957, Classification Loss: 0.37115496204317244
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 34, Reconstruction Loss: 0.15778071371316627, Classification Loss: 0.37104954059963147
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 35, Reconstruction Loss: 0.15774990713490186, Classification Loss: 0.36729330296198887
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 36, Reconstruction Loss: 0.1577281444860795, Classification Loss: 0.365360769297155
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 37, Reconstruction Loss: 0.15769014039543766, Classification Loss: 0.3630769060333471
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 38, Reconstruction Loss: 0.15766467565372566, Classification Loss: 0.36147885666818536
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 39, Reconstruction Loss: 0.15765153030245507, Classification Loss: 0.3587682377794588
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 40, Reconstruction Loss: 0.15762853157815, Classification Loss: 0.3565782869709002
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 41, Reconstruction Loss: 0.15759667483243137, Classification Loss: 0.3554837269523348
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 42, Reconstruction Loss: 0.15756531049443387, Classification Loss: 0.35479598930863093
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 43, Reconstruction Loss: 0.15754785076583883, Classification Loss: 0.3518137070471662
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 44, Reconstruction Loss: 0.15769801113768392, Classification Loss: 0.3516153572884758
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 45, Reconstruction Loss: 0.15752765794365323, Classification Loss: 0.34880875508909404
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 46, Reconstruction Loss: 0.15752032112403425, Classification Loss: 0.3470239777856699
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 47, Reconstruction Loss: 0.1574907305292439, Classification Loss: 0.34358141533258
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 48, Reconstruction Loss: 0.157468246215838, Classification Loss: 0.34457571741940174
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 49, Reconstruction Loss: 0.15743793685985372, Classification Loss: 0.342419818443767
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 50, Reconstruction Loss: 0.15746684768521854, Classification Loss: 0.34152792488234057
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 51, Reconstruction Loss: 0.15742215741542595, Classification Loss: 0.34022396087749573
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 52, Reconstruction Loss: 0.1573946954863678, Classification Loss: 0.33870450650073947
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 53, Reconstruction Loss: 0.15737658529752807, Classification Loss: 0.33861140396242007
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 54, Reconstruction Loss: 0.1573618080750199, Classification Loss: 0.33550221210366377
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 55, Reconstruction Loss: 0.1573511229442799, Classification Loss: 0.33474159192002656
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 56, Reconstruction Loss: 0.15730707170139696, Classification Loss: 0.3334128990559445
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 57, Reconstruction Loss: 0.157282586362468, Classification Loss: 0.33143650096133664
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 58, Reconstruction Loss: 0.15726689498620078, Classification Loss: 0.33050193233194736
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 59, Reconstruction Loss: 0.15726026305448562, Classification Loss: 0.33036187374721737
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 60, Reconstruction Loss: 0.15725020543612228, Classification Loss: 0.3288340068014773
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 61, Reconstruction Loss: 0.15722416814244355, Classification Loss: 0.32709317793005144
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 62, Reconstruction Loss: 0.15721945763466055, Classification Loss: 0.3259837897845985
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 63, Reconstruction Loss: 0.15717456072315397, Classification Loss: 0.3246079775515157
+DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 64, Reconstruction Loss: 0.15719249580750586, Classification Loss: 0.32389382370200587
 DEBUG:root:Model saved at ../torch_models/mm10/RXRA/drcn/drcn.pth

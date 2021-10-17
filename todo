@@ -1,4 +1,3 @@
-Clean dir
 Get correct results figure and update ppt
 Bound-Unbound sites results.
 Include FP,FN,TP,TN in your analysis. Also include how many changed from FP -> TP, FN -> TN and vice versa.

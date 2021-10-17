@@ -3,7 +3,7 @@
 #PBS -W umask=0007
 #PBS -W group_list=sam77_collab
 #PBS -j oe
-#PBS -l walltime=01:00:00
+#PBS -l walltime=20:00:00
 #PBS -l nodes=1:ppn=4:gpus=1:rhel7
 #PBS -l pmem=8gb
 #PBS -A sam77_e_g_gc_default

@@ -43,10 +43,46 @@ DEBUG:root:DRCN(
     (softmax): Softmax(dim=1)
   )
 )
+INFO:root:Previously trained model loaded!
 DEBUG:root:The model has 760234 parameters.
 DEBUG:root:Making samplers...
-DEBUG:root:Reconstruction Loss: 0.1840742804154665, Classification Loss: 0.25520772741226383
-DEBUG:root:Reconstruction Loss: 0.1782494835748882, Classification Loss: 0.2486698793436951
-DEBUG:root:Reconstruction Loss: 0.17736735749625404, Classification Loss: 0.2526245605267448
-DEBUG:root:Reconstruction Loss: 0.1770434111297249, Classification Loss: 0.24964839773263775
-DEBUG:root:Reconstruction Loss: 0.17690286230660254, Classification Loss: 0.25396748654499746
+DEBUG:root:Epoch: 0, Reconstruction Loss: 0.15695430967384436, Classification Loss: 0.3144787784006316
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 1, Reconstruction Loss: 0.1568382624031727, Classification Loss: 0.31398460475142725
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 2, Reconstruction Loss: 0.15682023592542782, Classification Loss: 0.3139630398776919
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 3, Reconstruction Loss: 0.1567975635076379, Classification Loss: 0.3135090590073898
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 4, Reconstruction Loss: 0.15697425215889768, Classification Loss: 0.3129409212858694
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 5, Reconstruction Loss: 0.1570156083651711, Classification Loss: 0.31169237519660536
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 6, Reconstruction Loss: 0.15703803694775792, Classification Loss: 0.31131396324813043
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 7, Reconstruction Loss: 0.15684648038168922, Classification Loss: 0.31015108626163473
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 8, Reconstruction Loss: 0.1567607822291786, Classification Loss: 0.3100464238326214
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 9, Reconstruction Loss: 0.15686474525424707, Classification Loss: 0.30877655780597474
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 10, Reconstruction Loss: 0.15681497551053156, Classification Loss: 0.3093157672223761
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 11, Reconstruction Loss: 0.1566896988380977, Classification Loss: 0.3094392529055527
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 12, Reconstruction Loss: 0.1568498208184054, Classification Loss: 0.30747781617488895
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 13, Reconstruction Loss: 0.1567014626889301, Classification Loss: 0.3068258785234208
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 14, Reconstruction Loss: 0.15668787617693936, Classification Loss: 0.30618148136454054
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 15, Reconstruction Loss: 0.15665418383948101, Classification Loss: 0.30605022628246586
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 16, Reconstruction Loss: 0.15660394408335546, Classification Loss: 0.30416593306332834
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 17, Reconstruction Loss: 0.1565846063370946, Classification Loss: 0.30441567360174415
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 18, Reconstruction Loss: 0.1567799325582829, Classification Loss: 0.3043220365545735
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth
+DEBUG:root:Epoch: 19, Reconstruction Loss: 0.15676277999086413, Classification Loss: 0.3027066767259294
+DEBUG:root:Model saved at ../../torch_models/mm10/RXRA/drcn/drcn.pth

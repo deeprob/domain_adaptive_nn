@@ -125,10 +125,10 @@ def train_drcn(args):
     classifier = DRCN(args)
     logging.debug(classifier)
     hybrid_path = args.model_state_file.replace(MODEL_NAME, "hybrid")
-    if os.path.exists(hybrid_path):
-        classifier = load_drcn_from_hybrid(classifier, hybrid_path)
-    else:
-        logging.error("Hybrid model path not found. Results will not be as expected!")
+#     if os.path.exists(hybrid_path):
+#         classifier = load_drcn_from_hybrid(classifier, hybrid_path)
+#     else:
+#         logging.error("Hybrid model path not found. Results will not be as expected!")
         
     classifier.to(args.device)
     model_params = utils.get_n_params(classifier)
@@ -175,9 +175,6 @@ def train_drcn(args):
 
             for batch_index, (batch_dict, tgt_batch_dict) in enumerate(zip(batch_generator, tgt_batch_generator)):
 
-                if batch_index>500:
-                    break
-
                 # the classifier training routine:
                 
                 # step 1. compute the classifier output for source data
@@ -187,7 +184,7 @@ def train_drcn(args):
                 loss_class = bce_loss_func(y_pred, batch_dict['y_target'].float())
                 loss_class_w = loss_class*1
                 
-                if batch_index%20==0:
+                if batch_index%10==0:
 
                     # --------------------------------------
                     # zero the gradients
@@ -226,7 +223,7 @@ def train_drcn(args):
                 recon_running_loss += (loss_recon_t - recon_running_loss) / (batch_index + 1)
                 
             torch.save(classifier.state_dict(), args.model_state_file)
-            logging.debug(f"Reconstruction Loss: {recon_running_loss}, Classification Loss: {class_running_loss}")
+            logging.debug(f"Epoch: {epoch_index}, Reconstruction Loss: {recon_running_loss}, Classification Loss: {class_running_loss}")
             logging.debug(f"Model saved at {args.model_state_file}")
 
     except KeyboardInterrupt:
@@ -284,7 +281,7 @@ if __name__ == "__main__":
         batch_size=128,
         early_stopping_criteria=5,
         learning_rate=0.0001,
-        num_epochs=5,
+        num_epochs=65,
         tolerance=1e-3,
         seed=1337,
         
